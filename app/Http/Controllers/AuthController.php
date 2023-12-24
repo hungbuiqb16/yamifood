@@ -11,12 +11,12 @@ use DB,Validator,Redirect,File;
 class AuthController extends Controller
 {
 
-    public function getLogin() {
-    	if (Auth::check()) {
-    		return redirect()->route('dashboard');
-    	}
-    	return view('admin.login');
-    }
+    // public function getLogin() {
+    // 	if (Auth::check()) {
+    // 		return redirect()->route('dashboard');
+    // 	}
+    // 	return view('admin.login');
+    // }
 
     public function postLogin(Request $request) {
 
