@@ -18,6 +18,11 @@ class AuthController extends Controller
     // 	return view('admin.login');
     // }
 
+    public function checkLogin()
+    {
+        return 'login';
+    }
+
     public function postLogin(Request $request) {
 
     	$data = [
